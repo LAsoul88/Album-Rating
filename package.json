@@ -1,0 +1,25 @@
+{
+  "name": "album-smith",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LAsoul88/Album-Smith.git"
+  },
+  "author": "Courtney Kakebeen courtney.kakebeen@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LAsoul88/Album-Smith/issues"
+  },
+  "homepage": "https://github.com/LAsoul88/Album-Smith#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.13.3"
+  }
+}
