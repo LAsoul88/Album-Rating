@@ -1,6 +1,7 @@
 // brings mongoose into file
 const mongoose = require('mongoose');
 
+// connection string
 const connectionStr = "mongodb://localhost:27017/albums";
 
 mongoose.connect(connectionStr, {
