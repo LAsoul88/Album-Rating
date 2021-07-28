@@ -1,4 +1,4 @@
-require('.././config/db.connection');
+require('../config/db.connection');
 
 module.exports = {
     Album: require('./Album')

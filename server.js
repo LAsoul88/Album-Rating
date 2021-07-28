@@ -1,36 +1,27 @@
+/* === External Modules === */
+// imports express module
 const express = require('express');
+
+/* === Module Instance === */
 const app = express();
 
+/* === PORT === */
+// sets PORT to 4000
 const PORT = 4000;
 
+/* === Internal Modules === */
+// sets album controllers to variable
+const controllers = require('./controllers');
 
+/* === Middleware === */
+app.use(express.urlencoded({ extended: true }));
+
+app.use(methodOverride('_method'));
 
 /* === Routes === */
 
-
-// index
-app.get('/', (req, res) => {
-    res.send('this works');
-});
-
-// new
-
-
-// create
-
-
-// show
-
-
-// edit 
-
-
-// update
-
-
-// delete
-
-
+// connects controllers
+app.use('/albums', controllers.album);
 
 // listener
 app.listen(PORT, (error) => {
