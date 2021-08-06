@@ -26,6 +26,7 @@ app.use(methodOverride('_method'));
 
 // connects controllers
 app.use('/albums', controllers.album);
+app.use('/users', controllers.user);
 
 // listener
 app.listen(PORT, (error) => {
