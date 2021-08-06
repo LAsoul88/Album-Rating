@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { Album } = require('../models');
+const { Album, User } = require('../models');
 
 /* === Routes === */
 
@@ -15,7 +15,9 @@ router.get('/new', (req, res) => {
 });
 
 // create
-
+// router.put('/', (req, res) => {
+//     res.
+// })
 
 // show
 router.get('/:id', (req, res) => {

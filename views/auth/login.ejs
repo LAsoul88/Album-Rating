@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head/_head', { page: 'Login' }) %> 
+
+<body>
+    <main>
+        <div class="login-container">
+            <form class="login" action="/login" method="POST">
+                <div class="label-container">
+                    <label for="username">username</label>
+                    <div class="input-field">
+                        <input
+                        class="login-input"
+                        type="text"
+                        name="username"
+                        id="username"
+                        />
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="login-register-redirect">
+            <a href="/register">Sign up for an account here!</a>
+        </div>
+    </main>
+</body>
+</html>
