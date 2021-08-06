@@ -15,7 +15,9 @@ router.get('/new', (req, res) => {
 });
 
 // create
-
+// router.put('/', (req, res) => {
+//     res.
+// })
 
 // show
 router.get('/:id', (req, res) => {
