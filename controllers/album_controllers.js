@@ -1,6 +1,5 @@
 const express = require('express');
 const router = express.Router();
-
 const { Album } = require('../models');
 
 /* === Routes === */
@@ -11,13 +10,17 @@ router.get('/', (req, res) => {
 }); 
 
 // new
-
+router.get('/new', (req, res) => {
+    res.send('this new works');
+});
 
 // create
 
 
 // show
-
+router.get('/:id', (req, res) => {
+    res.send('this specific page works as well');
+});
 
 // edit 
 

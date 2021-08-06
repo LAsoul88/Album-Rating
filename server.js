@@ -1,6 +1,8 @@
 /* === External Modules === */
 // imports express module
 const express = require('express');
+const methodOverride = require('method-override');
+require('./config/db.connection');
 
 /* === Module Instance === */
 const app = express();
